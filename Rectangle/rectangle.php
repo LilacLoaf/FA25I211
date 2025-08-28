@@ -26,6 +26,12 @@ $perimeter1 = $r1->calculatePerimeter();
 
 echo "Rectangle 1: Area = $area1. Perimeter = $perimeter1 <br>";
 
+
+$r2 -> setWidth(width:40)->setHeight(height:60);
+$area2 = $r2->calculateArea();
+$perimeter2 = $r2->calculatePerimeter();
+
+echo "Rectangle 2: Area = $area2. Perimeter = $perimeter2 <br>";
 ?>
 </body>
 </html>
