@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="xampp" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="MAMP APACHE">
         <serverdata>
@@ -9,10 +9,10 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="XAMP">
+      <paths name="xampp">
         <serverdata>
           <mappings>
-            <mapping deploy="" local="$PROJECT_DIR$" web="/I211" />
+            <mapping local="$PROJECT_DIR$" web="/I211" />
           </mappings>
         </serverdata>
       </paths>

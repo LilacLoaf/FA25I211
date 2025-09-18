@@ -10,7 +10,10 @@
 class Rectangle {
 private float $width, $height;
 
-
+public function __construct(float $width, float $height) {
+    $this->width = $width;
+    $this->height = $height;
+}
 
 //set the rectangle's width
 public function getWidth(): float {
