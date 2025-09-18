@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>JavaScript Slideshow</title>
+    <style type="text/css">
+        body {
+            background-color: #DCE0E4;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        table {
+            border: solid 3px #690;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        td#navigation {
+            border-bottom: solid 1px #690
+        }
+    </style>
+
+
+    <script>
+        //return today's date
+        function currentDate() {
+            let today = new Date();
+            let strToday = (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear();
+            return strToday;
+        }
+
+        //set the image
+        let imgCount = 1;
+
+        //display a specific image
+        function displayImage(imgCount) {
+            document.getElementById("image").src = "image" + imgCount + ".jpg";
+            document.getElementById("message").innerHTML = "Image " + imgCount();
+        }
+
+        //display the next image
+        function next() {
+            imgCount++
+            if (imgCount == 6) imgCount = 1;
+            displayImage(imgCount)
+        }
+
+        //display the previous image
+        function prev() {
+            imgCount--
+            if (imgCount == 0) imgCount = 5;
+            displayImage(imgCount)
+        }
+
+        //display the last image
+        function last() {
+            imgCount = 5;
+            displayImage(5);
+        }
+
+        //display the first image
+        function first() {
+            imgCount = 1;
+            displayImage(imgCount);
+        }
+    </script>
+
+</head>
+
+<body>
+<h1>JavaScript Slideshow</h1>
+<p>
+    <script>
+        document.write("Today is: " + currentDate())
+    </script>
+</p>
+
+<table>
+    <tr>
+        <td>
+            <!-- the container for displaying images -->
+            <div style="width: 260px">
+                <img id="image" src="image1.jpg"/>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td id="navigation">
+            <!-- navigation links -->
+            <a href="javascript:first()"> << </a> &nbsp;&nbsp;
+            <a href="javascript:prev()"> < </a> &nbsp;&nbsp;
+            <a href="javascript:next()"> > </a> &nbsp;&nbsp;
+            <a href="javascript:last()"> >> </a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div id="message">Image 1</div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

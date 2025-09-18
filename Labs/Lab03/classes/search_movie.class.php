@@ -6,3 +6,10 @@
  * Description:
  */
 
+require_once 'application/app_view.class.php';
+
+class SearchMovie{
+
+
+
+}

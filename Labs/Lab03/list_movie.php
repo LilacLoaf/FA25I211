@@ -1,13 +1,14 @@
 <?php
-/**
- * Author: Jonathan Nguyen
- * Date: 9/18/2025
- * File: search_movie.php
- * Description:
- */
 
+/*
+ * Author: Louie Zhu
+ * Date: 8/21/2020
+ * File: list_movie.php
+ * Description: list all movies
+ * 
+ */
 require_once 'classes/movie_manager.class.php';
-require_once 'classes/search.class.php';
+require_once 'classes/list_movie.class.php';
 
 $movie_manager = MovieManager:: getMovieManager(); //create a MovieManager
 //
