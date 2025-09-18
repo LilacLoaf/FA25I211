@@ -7,21 +7,20 @@
  */
 
 require_once 'classes/movie_manager.class.php';
-require_once 'classes/search.class.php';
+require_once 'classes/search_movie.class.php';
 
-$movie_manager = MovieManager:: getMovieManager(); //create a MovieManager
-//
-//retrieve movies
-$movies = $movie_manager->list_movie();
+$terms = isset($_GET['term']) ? $_GET['term'] : '';
 
-//handle errors if the last query failed
+$movie_manager = MovieManager:: getMovieManager();
+$movies = $movie_manager->search_movie($terms);
+$search = new SearchMovie();
+
 if (!$movies) {
     //handle errors
-    $message = "There was a problem displaying movies.";
+    $message = "error message";
     header("Location: show_error.php?eMsg=$message");
     exit();
 }
 
-// display all movies
-$view = new ListMovie();
-$view->display($movies);
+$view = new SearchMovie();
+$view ->display($movies);

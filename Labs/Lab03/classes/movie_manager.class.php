@@ -116,7 +116,7 @@ class MovieManager
         return false;
     }
 
-    //search the database for movies that match words in titles. Return an array of movies if succeed; false otherwise.
+    //search the database for movies that match words in titles. Return an array of movies if succeed false otherwise.
     public function search_movie($terms)
     {
         $terms = explode(" ", $terms); //explode multiple terms into an array
@@ -131,9 +131,25 @@ class MovieManager
 
         //add your code here to complete the method
         $query = $this->dbConnection->query($sql);
+        if (!$query) {
+            return false;
+        }
+        if ($query->num_rows > 0) {
+            return 0;
+        }
+        $movies = array();
+        while ($obj = $query->fetch_object()) {
+            $movie = new Movie
+            ($obj->title,
+                stripslashes($obj->rating),
+                stripslashes($obj->release_date),
+                stripslashes($obj->image),
+                stripslashes($obj->description));
+            $movie->setId($obj->id);
 
-
-        echo "test";
+            $movies[] = $movie;
+        }
+        return $movies;
     }
 
     //get all movie ratings
