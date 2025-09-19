@@ -130,25 +130,44 @@ class MovieManager
         $sql .= ")";
 
         //add your code here to complete the method
+
+        //make the connection to the database
         $query = $this->dbConnection->query($sql);
+
+        //if the query breaks return false, will be used for errors
         if (!$query) {
             return false;
         }
-        if ($query->num_rows > 0) {
+        //if the query returns no rows, return a 0
+        if ($query->num_rows == 0) {
             return 0;
         }
+
+        //define movies as an empty array for later
         $movies = array();
+
+        //while loop that goes through everything from the query
         while ($obj = $query->fetch_object()) {
             $movie = new Movie
+            //create a new object from the database
             ($obj->title,
                 stripslashes($obj->rating),
                 stripslashes($obj->release_date),
+                stripslashes($obj->director),
                 stripslashes($obj->image),
                 stripslashes($obj->description));
+            //sets the movie's id
             $movie->setId($obj->id);
 
             $movies[] = $movie;
         }
+
+
+        if($movies === false){
+
+        }
+
+        //fill the array into the screen
         return $movies;
     }
 
