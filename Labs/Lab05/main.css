@@ -1,0 +1,57 @@
+/*
+    Author : Louie Zhu
+    Date: 3/15/2024
+*/
+
+div#population-input {
+    width: 600px;
+    border: 0 solid #333;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row div {
+    padding: 10px 2px;
+}
+
+.header {
+    width: 600px;
+    font-weight: bold;
+    margin: 0 auto;
+    background-color: #e5e5e5;
+    border: 1px solid #aaa;
+    border-bottom: none;
+}
+
+#population-results {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: 1px solid #aaa;
+    margin: 0 auto;
+    box-shadow: 4px 4px 16px 2px #aaa;
+}
+
+#population-results .row:nth-child(even) {
+    background-color: #eee;
+}
+
+
+#population-results .row div:nth-child(1),
+.header div:nth-child(1)
+{
+    width: 120px;
+    text-align: center;
+}
+
+#population-results .row div:nth-child(2),
+.header div:nth-child(2)
+{
+    width: 220px;
+    text-align: left;
+}
+

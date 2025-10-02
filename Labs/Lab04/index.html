@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Countries By Continents</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="loadJSON.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+</head>
+<body>
+<h2>List of Countries By Continents</h2>
+<h4>Please select a continent from the dropdown list to view the list of countries.</h4>
+<!-- the selection list of the seven continents -->
+<select id="continents">
+    <option value="" selected="selected" disabled="disabled">Select a Continent </option>
+</select>
+
+<!-- The header row of the list of the countries of the selected continent -->
+<div class="countries row header">
+    <div>Name</div>
+    <div>Capital</div>
+    <div>Currency</div>
+    <div>Language</div>
+    <div>Area Code</div>
+</div>
+
+<!-- The list of the countries of the selected continent. For each country
+
+-->
+<div class="countries" id="countries"><p>Please select a continent to view the list of countries.</p></div>
+</body>
+</html>

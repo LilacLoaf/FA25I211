@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+}
+
+.countries {
+    width: 800px;
+    margin: 5px auto;
+    text-align: left;
+}
+
+.header {
+    font-weight: 700;
+    background-color: #b6cedb;
+    margin-top: 15px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.row div {
+    width: 150px;
+    min-height: 30px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.row:nth-child(odd) {
+    background-color: #eee;
+}
