@@ -87,6 +87,14 @@
                                <li class='year'>${year}</li>
                                </ul>`;
 
+                for (let i = 0; i < countries.length; i++) {
+                    let name = countries[i].name;
+                    let capital = countries[i].capital
+                    let currency = countries[i].currency
+                    let language = countries[i].languages;
+                    let phone = countries[i].phone;
+                }
+
                 //append the new cd to the current cds.
                 document.getElementById('cd-table').innerHTML += row;
             }

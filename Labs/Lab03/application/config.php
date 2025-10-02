@@ -12,7 +12,8 @@
 date_default_timezone_set('America/New_York');
 
 //base url of the application
-define("BASE_URL", "http://localhost/I211/Lab03");
+define("BASE_URL", "http://localhost/I211/Labs/Lab03/");
+//http://localhost/I211/Labs/Lab03/list_movie.php
 
 //default path for movie images
 define("MOVIE_IMG", "www/img/movies/");
