@@ -140,3 +140,25 @@ function trim(str) {
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
+
+/*
+*     xmlHttp.open("GET", url, true);
+    xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+            try {
+                const response = JSON.parse(xmlHttp.responseText);
+                // Update results using your actual div IDs
+                document.getElementById('base').innerText = response.baseArea;
+                document.getElementById('volume').innerText = response.volume;
+                document.getElementById('lateral').innerText = response.lateralSurface;
+                document.getElementById('surface').innerText = response.surfaceArea;
+            } catch (error) {
+                clearDisplay();
+                console.error('Error parsing server response:', error);
+            }
+        }
+    };
+    xmlHttp.send();
+}
+* */

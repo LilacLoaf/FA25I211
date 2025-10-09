@@ -6,10 +6,13 @@
  * Description:
  */
 
+//create class with rectangle class as the parent
 class Pyramid extends Rectangle
 {
+    //add in the height
     private float $height;
 
+    //constructor that gets the width and length from rectangle and also adds in the height
     public function __construct(float $width, float $length, float $height)
     {
         parent::__construct($width, $length);
@@ -45,7 +48,7 @@ class Pyramid extends Rectangle
 
     public function toString(): null
     {
-        $obj = [
+        return [
             "Width" => number_format($this->getWidth()),
             "Height" => number_format($this->getHeight()),
             "Base" => number_format($this->getBaseArea()),
@@ -53,6 +56,5 @@ class Pyramid extends Rectangle
             "Lateral" => number_format($this->getLateralSurface()),
             "Surface" => number_format($this->getSurfaceArea()),
         ];
-        return json_encode($obj);
     }
 }
