@@ -98,8 +98,3 @@ function play() {
         xmlHttp.send(null);
     }
 }
-
-// The server script that accepts the request is named population.php, which needs to be
-// completed in the next step. Along with every request, one query string variable named
-// name should be sent. The value of the query string variable is the parameter of the
-// function called name.
