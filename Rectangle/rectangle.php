@@ -4,7 +4,9 @@
  * Date: 8/28/2025
  * File: rectangle.php
  * Description:
- */ ?>
+ */
+
+use HOP7\HandsOnPractices\Practice6\Rectangle; ?>
 
 <!DOCTYPE html>
 <html lang="en">

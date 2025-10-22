@@ -26,13 +26,13 @@ public function getHeight(): float {
 }
 
 //generated code
-    public function setWidth(float $width): Rectangle
+    public function setWidth(float $width): \HOP7\HandsOnPractices\Practice6\Rectangle
     {
         $this->width = $width;
         return $this;
     }
 
-    public function setHeight(float $height): Rectangle
+    public function setHeight(float $height): \HOP7\HandsOnPractices\Practice6\Rectangle
     {
         $this->height = $height;
         return $this;

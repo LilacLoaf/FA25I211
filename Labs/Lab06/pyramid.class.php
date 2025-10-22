@@ -1,4 +1,7 @@
 <?php
+
+use HOP7\HandsOnPractices\Practice6\Rectangle;
+
 /**
  * Author: Jonathan Nguyen
  * Date: 10/8/2025
