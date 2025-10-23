@@ -26,7 +26,7 @@ function calculate() {
 
       //  console.log(width, length, height);
 
-    //check if the value is a number and not a negative number - im certain theres an easier way of doing this than 6 ORs
+    //check if the value is a number and not a negative number - im certain there's an easier way of doing this than 6 ORs
     if (isNaN(width) || isNaN(length) || isNaN(height) || width < 0 || length < 0 || height < 0) {
         //if any of these are true, clear out the base field
         document.getElementById('base').innerHTML = "";
