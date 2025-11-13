@@ -5,6 +5,7 @@
  * File: payable.class.php
  * Description: File contains the main payable interface used in the program
  */
+
 //Create the Payable interface
 interface Payable {
     //Method used to get all of the payment information.
