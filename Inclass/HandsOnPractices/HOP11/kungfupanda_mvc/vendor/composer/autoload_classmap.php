@@ -6,9 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ComposerAutoloaderInit29392925c2bd07adb84742d1df501a70' => $vendorDir . '/composer/autoload_real.php',
-    'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
-    'Composer\\Autoload\\ComposerStaticInit29392925c2bd07adb84742d1df501a70' => $vendorDir . '/composer/autoload_static.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Database' => $baseDir . '/application/database.class.php',
     'Dispatcher' => $baseDir . '/application/dispatcher.class.php',
@@ -16,7 +13,6 @@ return array(
     'Movie' => $baseDir . '/models/movie.class.php',
     'MovieController' => $baseDir . '/controllers/movie_controller.class.php',
     'MovieDetail' => $baseDir . '/views/movie/detail/movie_detail.class.php',
-    'MovieEdit' => $baseDir . '/views/movie/edit/movie_edit.class.php',
     'MovieError' => $baseDir . '/views/movie/error/movie_error.class.php',
     'MovieIndex' => $baseDir . '/views/movie/index/movie_index.class.php',
     'MovieIndexView' => $baseDir . '/views/movie/movie_index_view.class.php',

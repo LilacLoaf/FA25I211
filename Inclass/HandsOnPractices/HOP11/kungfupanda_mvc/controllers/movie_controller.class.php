@@ -25,9 +25,10 @@ class MovieController {
         if(!$movies){
             $this->error("There was a problem retrieving the movies.");
             return;
+
+            $view = new MovieDetail();
+            $view->display($movies);
         }
-        $view = new MovieIndex();
-        $view->display($movies);
     }
 
     //show details of a movie
@@ -38,8 +39,6 @@ class MovieController {
             $this->error("There was a problem retrieving the movies.");
             return;
         }
-        $view = new MovieDetail();
-        $view->display($movie);
     }
 
     //handle an error
@@ -94,40 +93,6 @@ class MovieController {
         // Note: value of $name is case sensitive.
         $this->error("Calling method '$name' caused errors. Route does not exist.");
         return;
-    }
-
-    //display a movie in a form for editing
-    public function edit($id): void
-    {
-        //retrieve the specific movie
-        $movie = $this->movie_model->view_movie($id);
-
-        if (!$movie) {
-            //display an error
-            $this->error("There was a problem displaying the movie id='" . $id . "'.");
-            return;
-        }
-
-        $view = new MovieEdit();
-        $view->display($movie);
-    }
-    //update a movie in the database
-    public function update($id): void
-    {
-        //update the movie
-        $update = $this->movie_model->update_movie($id);
-        if (!$update) {
-            //handle errors
-            $this->error("There was a problem updating the movie id='" . $id . "'.");
-            return;
-        }
-
-        //display the updated movie details
-        $confirm = "The movie was successfully updated.";
-        $movie = $this->movie_model->view_movie($id);
-
-        $view = new MovieDetail();
-        $view->display($movie, $confirm);
     }
 
 }
