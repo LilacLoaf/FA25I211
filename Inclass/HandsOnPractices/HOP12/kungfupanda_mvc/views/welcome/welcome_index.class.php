@@ -7,7 +7,6 @@
  */
 
 class WelcomeIndex extends IndexView {
-
     public function display(): void
     {
         //display page header

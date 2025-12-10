@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Inclass/HandsOnPractices/HOP13/kungfupanda-cig/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/Inclass/HandsOnPractices/HOP13/kungfupanda-cig/app/Config" isTestSource="false" packagePrefix="Config\" />
+      <sourceFolder url="file://$MODULE_DIR$/Inclass/HandsOnPractices/HOP13/kungfupanda-cig/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Inclass/HandsOnPractices/HOP13/kungfupanda-cig/tests/_support" isTestSource="true" packagePrefix="Tests\Support\" />
+      <sourceFolder url="file://$MODULE_DIR$/Final/spec" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/Inclass/HandsOnPractices/HOP11/kungfupanda_mvc/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/Inclass/HandsOnPractices/HOP12/kungfupanda_mvc/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/Inclass/HandsOnPractices/HOP13/kungfupanda-cig/vendor/codeigniter4/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/Inclass/HandsOnPractices/HOP13/kungfupanda-cig/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/Inclass/HandsOnPractices/HOP13/kungfupanda-cig/vendor/laminas/laminas-escaper" />
+      <excludeFolder url="file://$MODULE_DIR$/Inclass/HandsOnPractices/HOP13/kungfupanda-cig/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/Labs/lab08 - group/Lab08/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/Final/vendor/composer" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
